@@ -3,53 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Tech.Creditcard — Tap, NFC, Virtual & AI</title>
-  <meta name="description" content="Tap to pay, NFC, virtual cards, wearables and AI-driven fraud prevention. The technology spoke of The CreditCard Collection.">
-  <link rel="canonical" href="https://tech.creditcard" />
+  <meta name="description"
+        content="Tap to pay, NFC, virtual cards, wearables and AI-driven fraud prevention. The technology spoke of The CreditCard Collection." />
+  <link rel="canonical" href="https://tech.creditcard/" />
 
   <!-- SEO -->
-  <meta name="keywords" content="tap to pay, NFC, virtual cards, wearables, AI fraud, crypto cards, tech.creditcard">
+  <meta name="robots" content="index,follow" />
+  <meta name="keywords"
+        content="tap to pay, NFC, virtual cards, wearables, AI fraud, crypto cards, tech.creditcard, payment technology" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Tech.Creditcard — Tap, NFC, Virtual & AI">
-  <meta property="og:description" content="From NFC and tap-to-pay to AI risk scoring and on-chain issuing.">
-  <meta property="og:url" content="https://tech.creditcard">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://tech.creditcard/preview.png">
+  <meta property="og:title" content="Tech.Creditcard — Tap, NFC, Virtual & AI" />
+  <meta property="og:description"
+        content="From NFC and tap-to-pay to AI risk scoring and on-chain issuing." />
+  <meta property="og:url" content="https://tech.creditcard/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tech.creditcard/preview.png" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Tech.Creditcard — Tap, NFC, Virtual & AI">
-  <meta name="twitter:description" content="Payment technology, explained.">
-  <meta name="twitter:image" content="https://tech.creditcard/preview.png">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tech.Creditcard — Tap, NFC, Virtual & AI" />
+  <meta name="twitter:description" content="Payment technology, explained." />
+  <meta name="twitter:image" content="https://tech.creditcard/preview.png" />
 
+  <!-- Shared small CSS tweaks -->
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Google Analytics (GA4) -->
+  <!-- Google Analytics (GA4) – samme som fin/choose/travels -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date()); gtag('config', 'G-64FE63JQ3H');
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-64FE63JQ3H');
   </script>
 </head>
 <body class="bg-slate-950 text-slate-100">
+  <!-- Header -->
   <header class="border-b border-slate-800/60 bg-slate-950/70 backdrop-blur sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <div class="flex items-center gap-2">
         <div class="h-8 w-8 rounded-full bg-sky-500/80 flex items-center justify-center text-xs font-bold">CC</div>
-        <span class="font-semibold tracking-tight">Tech.Creditcard</span>
+        <div class="flex flex-col leading-tight">
+          <span class="font-semibold tracking-tight">Tech.Creditcard</span>
+          <span class="text-[11px] text-slate-400">Technology spoke · The CreditCard Collection</span>
+        </div>
       </div>
       <nav class="hidden md:flex gap-6 text-sm text-slate-300">
-        <a href="/" class="hover:text-white">Home</a>
+        <a href="https://fin.creditcard/" class="hover:text-white">Collection</a>
         <a href="/tap" class="hover:text-white">Tap/NFC</a>
         <a href="/virtual" class="hover:text-white">Virtual</a>
         <a href="/wearables" class="hover:text-white">Wearables</a>
-        <a href="/ai-fraud" class="hover:text-white">AI & fraud</a>
+        <a href="/ai-fraud" class="hover:text-white">AI &amp; fraud</a>
         <a href="/crypto" class="hover:text-white">Crypto</a>
-        <a href="https://choose.creditcard" class="hover:text-white">Choose</a>
+        <a href="https://choose.creditcard/" class="hover:text-white">Choose</a>
       </nav>
-      <a href="mailto:support@ronarn.com" class="text-xs md:text-sm bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-3 py-1.5 transition">Contact</a>
+      <a href="mailto:support@ronarn.com"
+         class="text-xs md:text-sm bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold rounded-lg px-3 py-1.5 transition">
+        Contact
+      </a>
     </div>
   </header>
 
@@ -57,23 +74,45 @@
   <section class="max-w-6xl mx-auto px-4 pt-10 pb-12">
     <div class="grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <p class="text-xs uppercase tracking-[0.3em] text-sky-300 mb-4">Payments · Technology</p>
+        <p class="text-xs uppercase tracking-[0.3em] text-sky-300 mb-4">
+          Payments · Technology
+        </p>
         <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
           The future of<br class="hidden md:block" />
           <span class="text-sky-300">card technology.</span>
         </h1>
         <p class="text-slate-300 leading-relaxed mb-6">
-          NFC flows, tap-to-pay, virtual numbers, wearables and AI-driven fraud prevention. Clear explainers, examples and vendor landscape.
+          NFC flows, tap-to-pay, virtual numbers, wearables and AI-driven fraud prevention.
+          Clear explainers, example stacks and how issuers actually implement them.
+        </p>
+        <p class="text-xs text-slate-500">
+          Tech.Creditcard explains the rails. To compare actual cards and benefits, head over to
+          <a href="https://choose.creditcard/" class="text-sky-300 underline underline-offset-4">Choose.Creditcard</a>.
         </p>
       </div>
       <div class="bg-slate-900/30 border border-slate-800 rounded-2xl p-6 md:p-8">
         <p class="text-slate-300 text-sm mb-3">Explore</p>
         <ul class="space-y-2 text-sm">
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Tap / NFC</span><a class="text-sky-300 text-xs" href="/tap">Open</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Virtual cards</span><a class="text-sky-300 text-xs" href="/virtual">Open</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Wearables</span><a class="text-sky-300 text-xs" href="/wearables">Open</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>AI & fraud</span><a class="text-sky-300 text-xs" href="/ai-fraud">Open</a></li>
-          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg"><span>Crypto rails</span><a class="text-sky-300 text-xs" href="/crypto">Open</a></li>
+          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg">
+            <span>Tap / NFC</span>
+            <a class="text-sky-300 text-xs" href="/tap">Open</a>
+          </li>
+          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg">
+            <span>Virtual cards</span>
+            <a class="text-sky-300 text-xs" href="/virtual">Open</a>
+          </li>
+          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg">
+            <span>Wearables</span>
+            <a class="text-sky-300 text-xs" href="/wearables">Open</a>
+          </li>
+          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg">
+            <span>AI &amp; fraud</span>
+            <a class="text-sky-300 text-xs" href="/ai-fraud">Open</a>
+          </li>
+          <li class="flex items-center justify-between bg-slate-900/50 px-3 py-2 rounded-lg">
+            <span>Crypto rails</span>
+            <a class="text-sky-300 text-xs" href="/crypto">Open</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -83,17 +122,37 @@
   <section class="max-w-6xl mx-auto px-4 pb-16">
     <h2 class="text-xl font-semibold mb-4">Topics</h2>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/tap"><h3 class="font-semibold">Tap to pay</h3><p class="text-xs text-slate-400 mt-2">Acceptance & wallets.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/virtual"><h3 class="font-semibold">Virtual cards</h3><p class="text-xs text-slate-400 mt-2">Single-use numbers.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/wearables"><h3 class="font-semibold">Wearables</h3><p class="text-xs text-slate-400 mt-2">Rings, bands, watches.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/ai-fraud"><h3 class="font-semibold">AI · Fraud</h3><p class="text-xs text-slate-400 mt-2">Risk scoring & device signals.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/crypto"><h3 class="font-semibold">Crypto</h3><p class="text-xs text-slate-400 mt-2">On-chain issuing & rails.</p></a>
-      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="https://choose.creditcard"><h3 class="font-semibold">Compare cards</h3><p class="text-xs text-slate-400 mt-2">Open the hub.</p></a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/tap">
+        <h3 class="font-semibold">Tap to pay</h3>
+        <p class="text-xs text-slate-400 mt-2">Wallets, terminals and EMV flow.</p>
+      </a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/virtual">
+        <h3 class="font-semibold">Virtual cards</h3>
+        <p class="text-xs text-slate-400 mt-2">Single-use numbers & card-on-file.</p>
+      </a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/wearables">
+        <h3 class="font-semibold">Wearables</h3>
+        <p class="text-xs text-slate-400 mt-2">Rings, bands, watches & more.</p>
+      </a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/ai-fraud">
+        <h3 class="font-semibold">AI &amp; fraud</h3>
+        <p class="text-xs text-slate-400 mt-2">Risk engines, device signals, biometrics.</p>
+      </a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="/crypto">
+        <h3 class="font-semibold">Crypto rails</h3>
+        <p class="text-xs text-slate-400 mt-2">On-chain issuing, stablecoins & bridges.</p>
+      </a>
+      <a class="bg-slate-900/40 border border-slate-800 rounded-xl p-4" href="https://choose.creditcard/">
+        <h3 class="font-semibold">Compare cards</h3>
+        <p class="text-xs text-slate-400 mt-2">Open the Choose.Creditcard hub.</p>
+      </a>
     </div>
   </section>
 
   <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    Part of <span class="text-slate-200">The CreditCard Collection</span> · built by <span class="text-slate-200">ronarn</span> · Contact: <a href="mailto:support@ronarn.com" class="underline underline-offset-4">support@ronarn.com</a>
+    Part of <span class="text-slate-200">The CreditCard Collection</span> · built by
+    <span class="text-slate-200">ronarn</span> · Contact:
+    <a href="mailto:support@ronarn.com" class="underline underline-offset-4">support@ronarn.com</a>
   </footer>
 </body>
 </html>
