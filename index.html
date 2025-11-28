@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Tech.Creditcard – Modern Payment Technology Explained</title>
-  <meta name="description" content="Understand the technology behind modern credit-card payments: NFC, virtual cards, wallets, security layers, identity verification and authorization flows." />
+  <title>Tech.Creditcard – How Card Payment Technology Works</title>
+  <meta name="description" content="Understand the technology behind modern credit-card payments: NFC, tap-to-pay, virtual cards, wallets, security layers and authorization flows. Neutral, educational overview." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://tech.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Tech.Creditcard – Payment Technology Explained" />
-  <meta property="og:description" content="Clear explanations of tap-to-pay, NFC, virtual cards, mobile wallets, SCA, tokenization and card authorization flows." />
+  <meta property="og:title" content="Tech.Creditcard – Card Payment Technology Explained" />
+  <meta property="og:description" content="Learn how tap-to-pay, NFC, tokenization, wallets and issuer risk engines work together each time you use a credit card." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tech.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tech.Creditcard – Payment Technology Explained" />
-  <meta name="twitter:description" content="Learn how card networks, tokenization, wallets and NFC terminals work behind the scenes." />
+  <meta name="twitter:title" content="Tech.Creditcard – Card Payment Technology Explained" />
+  <meta name="twitter:description" content="Neutral explanations of NFC, tap-to-pay, virtual cards, wallets, limits and authentication in modern card systems." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -34,7 +34,7 @@
   <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Minisite shared styles -->
+  <!-- Your shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-slate-950 text-slate-100">
@@ -44,13 +44,13 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">Tech.Creditcard</div>
-          <div class="brand-subtitle">Payment Technology Explained</div>
+          <div class="brand-subtitle">Card Payment Technology Explained</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#overview">Overview</a>
-        <a href="#mechanics">Technology</a>
-        <a href="#compare">Layers</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
@@ -68,81 +68,100 @@
       <div class="hero-content">
         <h1>The Technology Behind Modern Credit-Card Payments</h1>
         <p class="hero-lead">
-          From NFC chips to encrypted tokens, modern card payments rely on multiple security and identity layers. This page explains the core technology in simple language — not financial advice.
+          From NFC chips to encrypted tokens, modern card payments rely on multiple technical layers. This page explains the core building blocks – hardware, wallets, tokens and limits – in simple, neutral language.
         </p>
         <a class="cta" href="https://choose.creditcard/technology/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore the Technology & Payments hub
+          Explore the Technology &amp; Payments hub
         </a>
       </div>
     </section>
 
-    <!-- Overview -->
+    <!-- Content sections -->
     <section id="overview" class="section">
-      <h2>What Counts as “Card Technology”?</h2>
-      <p>"Payment technology" is everything that happens between the moment you tap your card or phone and the moment a transaction is approved. It includes hardware (chips, terminals), software (wallets, authentication), and network rules (issuer, acquirer, schemes).</p>
-      <p>Most users only see the tap — but behind that tap, dozens of systems communicate to verify identity, risk, authorization limits, and fraud signals.</p>
+      <h2>What Is Card Payment Technology?</h2>
+      <p>“Card payment technology” is everything that happens between the moment you tap, swipe or type in a card number and the moment the transaction is approved. It includes chips and terminals, mobile wallets, network rules and issuer decision systems.</p>
+      <p>Most people only see the card and the terminal. Behind the scenes, multiple systems communicate to identify the cardholder, apply limits, score risk and decide whether the payment should go through.</p>
     </section>
 
-    <!-- Mechanics -->
     <section id="mechanics" class="section">
-      <h2>How a Tap-to-Pay Transaction Works</h2>
-      <p>When you hold your card or phone near a terminal, the NFC chip establishes a secure, short-range connection. The card or wallet then sends a tokenized payment credential — not the real card number — to the terminal.</p>
-      <p>This credential is routed through the payment network (Visa/Mastercard/etc.), where the issuer checks:</p>
+      <h2>How a Modern Card Transaction Flows</h2>
+      <p>When you hold a card, phone or wearable near a reader, the NFC chip establishes a secure, short-range connection. The card or wallet sends a tokenized payment credential – instead of the raw card number – to the terminal.</p>
+      <p>That credential is routed through the payment network (Visa, Mastercard, etc.), where the issuer checks:</p>
 
       <ul class="list">
-        <li>Identity and authentication confidence</li>
-        <li>Available credit or balance</li>
-        <li>Risk score and past behaviour</li>
-        <li>Merchant category, geography and limits</li>
+        <li>Whether the credential matches a valid card or device token</li>
+        <li>Available credit or balance on the underlying account</li>
+        <li>Risk score based on recent behaviour and device patterns</li>
+        <li>Merchant category, country and any relevant limits or blocks</li>
       </ul>
 
-      <p>If everything checks out, the issuer sends back an approval with a cryptographic authentication code.</p>
+      <p>If the checks pass, the issuer responds with an approval and a cryptographic authentication code. If not, the transaction is declined or a step-up authentication challenge may be required.</p>
     </section>
 
-    <!-- Layers table -->
+    <section class="section">
+      <h2>Virtual Cards, Wallets and Wearables</h2>
+      <p>Many card products now offer virtual card numbers, mobile wallets and wearable payments. Technically, these are different representations of the same underlying account.</p>
+      <p>Virtual cards often have their own number, expiry and controls, but ultimately settle to the same credit line. Wallets and wearables hold tokenized versions of the card in a secure element on the device, unlocked with biometrics or a PIN.</p>
+    </section>
+
+    <section class="section">
+      <h2>Limits, Controls and Risk Engines</h2>
+      <p>Behind every approval or decline there are configurable limits. These can include per-transaction caps, daily and monthly totals, region restrictions and merchant-category blocks.</p>
+      <p>Issuers also run risk engines that look at device signals, spending patterns and previous fraud reports. If something looks unusual, the system may decline, require extra authentication or temporarily lock the card.</p>
+    </section>
+
+    <section class="section">
+      <h2>Security and Authentication Layers</h2>
+      <p>Security is handled in layers rather than by a single control. Card numbers, tokens, cryptograms, device binding and user authentication all work together.</p>
+      <p>Depending on the channel, you might see chip-and-PIN, tap-and-go with background risk checks, or extra authentication such as 3-D Secure challenges for online payments.</p>
+    </section>
+
+    <!-- Comparison block -->
     <section id="compare" class="section">
-      <h2>The Layers Behind Each Payment</h2>
+      <h2>Compare Technology Features Across Cards</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
             <tr>
-              <th>Layer</th>
-              <th>Example</th>
-              <th>Purpose</th>
+              <th>Feature</th>
+              <th>What to Look For</th>
+              <th>Why It Matters</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Hardware</td>
-              <td>NFC chips, secure elements</td>
-              <td>Stores keys and enables encrypted transmission.</td>
+              <td>Contactless Support</td>
+              <td>Tap-to-pay, mobile wallets, wearables</td>
+              <td>Determines how easily the card can be used in stores.</td>
             </tr>
             <tr>
-              <td>Tokenization</td>
-              <td>Device PAN, network tokens</td>
-              <td>Replaces real card number with a per-device token.</td>
+              <td>Virtual Card Options</td>
+              <td>Disposable numbers, merchant-locked cards</td>
+              <td>Can reduce exposure when shopping online or testing services.</td>
             </tr>
             <tr>
-              <td>Wallets</td>
-              <td>Apple Pay, Google Wallet</td>
-              <td>Manages tokens, biometrics and tap-to-pay flow.</td>
+              <td>Controls &amp; Limits</td>
+              <td>Per-transaction caps, region and merchant settings</td>
+              <td>Gives more fine-grained control over how the card is used.</td>
             </tr>
             <tr>
-              <td>Authentication</td>
-              <td>Biometrics, passcodes, SCA rules</td>
-              <td>Confirms the user is the rightful cardholder.</td>
+              <td>Wallet &amp; Platform Support</td>
+              <td>Apple Pay, Google Wallet, other local wallets</td>
+              <td>Impacts which devices and ecosystems the card works well with.</td>
             </tr>
             <tr>
-              <td>Issuer Decisioning</td>
-              <td>Risk engines, velocity checks</td>
-              <td>Approves or declines based on rules and limits.</td>
+              <td>Security &amp; Authentication</td>
+              <td>Biometrics, 3-D Secure, alerts and notifications</td>
+              <td>Helps detect misuse and protect against unauthorized transactions.</td>
             </tr>
           </tbody>
         </table>
       </div>
       <p class="small">
-        For practical comparisons of cards that support advanced payment features, visit
-        <a href="https://choose.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=layer_info">Choose.Creditcard</a>.
+        For live product-by-product comparisons of cards with different technology features, visit
+        <a href="https://choose.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          Choose.Creditcard
+        </a>.
       </p>
     </section>
 
@@ -150,37 +169,30 @@
     <section class="section">
       <h2>Explore Related Payment Technologies</h2>
       <div class="cluster-grid">
-
         <a class="cluster-card" href="https://tap.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_tap">
           <h3>Tap.Creditcard</h3>
-          <p>How tap-to-pay and NFC terminals work.</p>
+          <p>How tap-to-pay and NFC terminals work in practice.</p>
         </a>
-
-        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
-          <h3>VirtualPay.Creditcard</h3>
-          <p>Virtual cards and temporary numbers.</p>
-        </a>
-
         <a class="cluster-card" href="https://nfc.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_nfc">
           <h3>NFC.Creditcard</h3>
-          <p>Short-range communication used in tap-to-pay.</p>
+          <p>The short-range radio technology behind contactless cards.</p>
         </a>
-
+        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
+          <h3>VirtualPay.Creditcard</h3>
+          <p>Virtual card numbers and controlled online spending.</p>
+        </a>
         <a class="cluster-card" href="https://wallets.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_wallets">
           <h3>Wallets.Creditcard</h3>
-          <p>How digital wallets manage tokens and security.</p>
+          <p>Digital wallets, device tokens and biometric unlock.</p>
         </a>
-
-        <a class="cluster-card" href="https://access.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_access">
-          <h3>Access.Creditcard</h3>
-          <p>Identity, permissions and authorization flows.</p>
+        <a class="cluster-card" href="https://wearable.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_wearable">
+          <h3>Wearable.Creditcard</h3>
+          <p>Using watches, bands and other devices for payments.</p>
         </a>
-
         <a class="cluster-card" href="https://limits.creditcard/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=cluster_limits">
           <h3>Limits.Creditcard</h3>
-          <p>How card limits and velocity rules are set.</p>
+          <p>How issuers set, monitor and adjust spending limits.</p>
         </a>
-
       </div>
     </section>
 
@@ -188,13 +200,13 @@
     <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        Tech.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a global network of focused microsites operated by ronarn AS.
+        Tech.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a single payment concept in clear language and then connects you to independent comparison tools.
       </p>
       <p class="small">
-        Each site covers one technical or practical aspect of card payments in independent, factual language. No endorsements, no financial advice.
+        We do not issue cards. We summarize documentation, highlight technical trade-offs and link to external providers where you can read the full terms yourself.
       </p>
       <p class="small">
-        This page is informational only and does not provide financial, investment or tax guidance.
+        This site is informational only and does not provide financial, investment or tax advice. Always review official documentation and consider seeking independent advice if needed.
       </p>
 
       <!-- Technology hub snippet -->
@@ -211,12 +223,12 @@
 
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Ready to Explore More Payment Tech?</h2>
+      <h2>Ready to Compare Technology Features Across Cards?</h2>
       <p class="small">
-        Tech.Creditcard explains the building blocks — the hub shows how they connect. Visit the main Technology & Payments hub for deeper guides.
+        Use Tech.Creditcard to understand the mechanics — then go to the main hub to see which cards support contactless, wallets, virtual cards and more.
       </p>
       <a class="cta" href="https://choose.creditcard/technology/?utm_source=tech.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
-        Visit the Technology Hub
+        Go to the Technology &amp; Payments hub
       </a>
     </section>
   </main>
